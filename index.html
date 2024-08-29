@@ -193,6 +193,7 @@
       });
     
       aboutButton.addEventListener('click', () => {
+        event.preventDefault();
       const aboutSection = document.getElementById('About me');
       const aboutSectionHeight = aboutSection.offsetHeight; // Get the height of the element
 
@@ -200,6 +201,7 @@
       });
     
       projectsButton.addEventListener('click', () => {
+        event.preventDefault();
       const projectsSection = document.getElementById('Projects'); // Update the ID if your section is named differently
       const projectsSectionHeight = projectsSection.offsetHeight;
 
@@ -207,12 +209,11 @@
       });
 
       contactButton.addEventListener('click', () => {
+        event.preventDefault();
       const contactSection = document.getElementById('Contact'); // Update the ID if your section is named differently
       window.scrollTo({ top: contactSection.offsetTop, behavior: 'smooth' });
       });
     
-      // ... similar event listeners for other buttons
-      // this is a sample comment to understand git
     
     </script>
 </body>
