@@ -196,14 +196,14 @@
       const aboutSection = document.getElementById('About me');
       const aboutSectionHeight = aboutSection.offsetHeight; // Get the height of the element
 
-      window.scrollTo({ top: aboutSection.offsetTop - aboutSectionHeight / 15, behavior: 'smooth' });
+      window.scrollTo({ top: aboutSection.offsetTop - aboutSectionHeight / 10, behavior: 'smooth' });
       });
     
       projectsButton.addEventListener('click', () => {
       const projectsSection = document.getElementById('Projects'); // Update the ID if your section is named differently
       const projectsSectionHeight = projectsSection.offsetHeight;
 
-      window.scrollTo({ top: projectsSection.offsetTop - projectsSectionHeight / 2, behavior: 'smooth' });  // Adjust the offset fraction as needed
+      window.scrollTo({ top: projectsSection.offsetTop - projectsSectionHeight / 20, behavior: 'smooth' });  // Adjust the offset fraction as needed
       });
 
       contactButton.addEventListener('click', () => {
